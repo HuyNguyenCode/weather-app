@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="data_category"
+        app:title="@string/data">
+
+        <SwitchPreferenceCompat
+            app:key="realtime_weather"
+            app:title="@string/realtime_weather"
+            app:summary="@string/realtime_weather_summary"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            app:key="offline_access"
+            app:title="@string/offline_access"
+            app:summary="@string/offline_access_summary"
+            app:defaultValue="true"/>
+
+        <Preference
+            app:key="download_location"
+            app:title="@string/download_location"
+            app:summary="@string/download_location_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="appearance_category"
+        app:title="@string/appearance">
+
+        <ListPreference
+            app:key="language"
+            app:title="@string/language"
+            app:summary="@string/current_language"
+            android:entries="@array/languages"
+            android:entryValues="@array/language_alias"/>
+
+        <ListPreference
+            app:key="theme"
+            app:title="@string/theme"
+            app:summary="@string/system_default"
+            android:entries="@array/themes"
+            android:entryValues="@array/theme_alias"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="feedback"
+        app:title="@string/feedback">
+
+        <Preference
+            app:key="feedback"
+            app:title="@string/send_feedback"
+            app:summary="@string/send_feedback_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.facebook.com/tue.dm.mintee" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

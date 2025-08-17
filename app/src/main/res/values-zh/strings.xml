@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">主页</string>
+    <string name="monitoring">监控</string>
+    <string name="map">地图</string>
+    <string name="settings">设置</string>
+    <string name="current_language">中文 (简体)</string>
+    <string name="app_introduction">为您提供最快、最准确的天气信息</string>
+    <string name="sign_in">登入</string>
+    <string name="sign_up">报名</string>
+    <string name="continue_with_google">继续使用 Google</string>
+    <string name="or">或者</string>
+    <string name="username">用户名</string>
+    <string name="email">电子邮件</string>
+    <string name="password">密码</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="back">后退</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="reset_password">重置你的密码？</string>
+    <string name="reset">重置</string>
+    <string name="temperature_with_unit">温度 (°C)</string>
+    <string name="rainfall_with_unit">雨量 (mm)</string>
+    <string name="windspeed_with_unit">风速 (km/h)</string>
+    <string name="humidity_with_unit">湿度 (%)</string>
+    <string name="attribute">属性</string>
+    <string name="sensor">传感器</string>
+    <string name="timeframe">大体时间</string>
+    <string name="time_range">时间范围</string>
+    <string name="hour">小时</string>
+    <string name="day">天</string>
+    <string name="week">星期</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="view">看法</string>
+    <string name="sign_out">登出</string>
+    <string name="theme">主题</string>
+    <string name="light_theme">光</string>
+    <string name="dark_theme">黑</string>
+    <string name="system_default">系统默认</string>
+    <string name="language">语言</string>
+    <string name="realtime_weather">实时天气</string>
+    <string name="realtime_weather_summary">允许WeatherNow更新并显示实时天气信息</string>
+    <string name="offline_access">离线访问</string>
+    <string name="offline_access_summary">允许应用程序将临时数据保存到存储中以供离线访问</string>
+    <string name="download_location">下载位置</string>
+    <string name="download_location_summary">选择下载并保存文件的目录</string>
+    <string name="data">数据</string>
+    <string name="appearance">外貌</string>
+    <string name="feedback">反馈</string>
+    <string name="send_feedback">发送反馈</string>
+    <string name="send_feedback_summary">报告技术问题或建议新功能</string>
+    <string name="save_login_info">保存登录信息</string>
+    <string name="remember_me">记住账号</string>
+    <string name="chart_no_data">无可用图表数据</string>
+    <string name="weather">天气</string>
+    <string name="air_quality">空气质量</string>
+    <string name="aqi">AQI</string>
+    <string name="aqi_predict">AQI 预测</string>
+    <string name="co2">CO2</string>
+    <string name="co2_average">CO-2 平均值</string>
+    <string name="no_aq">NO</string>
+    <string name="no2">NO2</string>
+    <string name="o3">O3</string>
+    <string name="pm10">PM10</string>
+    <string name="pm25">PM2.5</string>
+    <string name="so2">SO2</string>
+    <string name="temperature_value">%1$d°</string>
+    <string name="celsius">摄氏度</string>
+    <string name="celsius_c">摄氏度 (°C)</string>
+    <string name="fahrenheit">华氏度</string>
+    <string name="fahrenheit_f">华氏度 (°F)</string>
+    <string name="view_chart">查看图表</string>
+    <string name="uv_index">紫外线指数</string>
+    <string name="user_settings">用户设置</string>
+    <string name="humidity">湿度</string>
+    <string name="precipitation">沉淀</string>
+    <string name="wind">风</string>
+    <string name="rainfall">雨量</string>
+    <string name="sunrise_and_sunset">日出 &amp; 日落</string>
+    <string name="environment">环境</string>
+    <string name="today">今天</string>
+    <string name="pollutant_concentration_with_unit">污染物浓度 (μg/m\u00B3)</string>
+    <string name="partly_cloudy">多云</string>
+    <string name="moderate">缓和</string>
+    <string name="sunrise">日出</string>
+    <string name="sunset">日落</string>
+    <string name="aqi_value">空气质量指数：%1$d/5</string>
+    <string name="air_moderate_desc">空气质量对于敏感人群来说是不健康的。 会发生潜在的健康影响。</string>
+    <string name="select_date_range">选择日期范围</string>
+    <string name="select_time">选择时间</string>
+    <string-array name="languages">
+        <item>英语</item>
+        <item>越南语</item>
+        <item>中文 (简体)</item>
+    </string-array>
+    <string-array name="themes">
+        <item>系统默认</item>
+        <item>光</item>
+        <item>暝</item>
+    </string-array>
+</resources>

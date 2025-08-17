@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Trang chủ</string>
+    <string name="monitoring">Phân tích</string>
+    <string name="map">Bản đồ</string>
+    <string name="settings">Cài đặt</string>
+    <string name="current_language">Tiếng Việt</string>
+    <string name="app_introduction">Cung cấp cho bạn thông tin thời tiết nhanh chóng và chính xác nhất</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="continue_with_google">Tiếp tục với Google</string>
+    <string name="or">hoặc</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="back">Quay lại</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="reset_password">Đặt lại mật khẩu</string>
+    <string name="reset">Đặt lại</string>
+    <string name="temperature_with_unit">Nhiệt độ (°C)</string>
+    <string name="rainfall_with_unit">Lượng mưa (mm)</string>
+    <string name="windspeed_with_unit">Tốc độ gió (km/h)</string>
+    <string name="humidity_with_unit">Độ ẩm (%)</string>
+    <string name="attribute">Thành phần</string>
+    <string name="sensor">Cảm biến</string>
+    <string name="timeframe">Khung thời gian</string>
+    <string name="time_range">Khoảng thời gian</string>
+    <string name="hour">Giờ</string>
+    <string name="day">Ngày</string>
+    <string name="week">Tuần</string>
+    <string name="month">Tháng</string>
+    <string name="year">Năm</string>
+    <string name="view">Xem</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="theme">Chủ đề</string>
+    <string name="light_theme">Sáng</string>
+    <string name="dark_theme">Tối</string>
+    <string name="system_default">Mặc định hệ thống</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="realtime_weather">Thời tiết thời gian thực</string>
+    <string name="realtime_weather_summary">Cho phép WeatherNow cập nhật và hiển thị thông tin thời tiết theo thời gian thực</string>
+    <string name="offline_access">Truy cập ngoại tuyến</string>
+    <string name="offline_access_summary">Cho phép ứng dụng lưu trữ dữ liệu tạm thời để truy cập khi không có Internet</string>
+    <string name="download_location">Vị trí lưu tệp tin</string>
+    <string name="download_location_summary">Chọn một vị trí trong bộ nhớ để lưu tệp tin</string>
+    <string name="data">Dữ liệu</string>
+    <string name="appearance">Giao diện</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="send_feedback">Gửi phản hồi</string>
+    <string name="send_feedback_summary">Báo cáo lỗi kỹ thuật hoặc đề xuất tính năng mới với chúng tôi</string>
+    <string name="save_login_info">Lưu thông tin đăng nhập</string>
+    <string name="remember_me">Nhớ đăng nhập</string>
+    <string name="chart_no_data">Không có dữ liệu thống kê</string>
+    <string name="weather">Thời tiết</string>
+    <string name="air_quality">Chất lượng không khí</string>
+    <string name="aqi">AQI</string>
+    <string name="aqi_predict">Dự đoán AQI</string>
+    <string name="co2">CO2</string>
+    <string name="co2_average">CO2 Trung bình</string>
+    <string name="no_aq">NO</string>
+    <string name="no2">NO2</string>
+    <string name="o3">O3</string>
+    <string name="pm10">PM10</string>
+    <string name="pm25">PM2.5</string>
+    <string name="so2">SO2</string>
+    <string name="temperature_value">%1$d°</string>
+    <string name="celsius">Độ C</string>
+    <string name="celsius_c">Độ C (°C)</string>
+    <string name="fahrenheit">Độ F</string>
+    <string name="fahrenheit_f">Độ F (°F)</string>
+    <string name="view_chart">Xem biểu đồ</string>
+    <string name="uv_index">Chỉ số UV</string>
+    <string name="user_settings">Cài đặt người dùng</string>
+    <string name="humidity">Độ ẩm</string>
+    <string name="precipitation">Lượng mưa</string>
+    <string name="wind">Gió</string>
+    <string name="rainfall">Mưa</string>
+    <string name="sunrise_and_sunset">Mặt trời mọc &amp; Mặt trời lặn</string>
+    <string name="environment">Môi trường</string>
+    <string name="today">Hôm nay</string>
+    <string name="pollutant_concentration_with_unit">Nồng độ chất ô nhiễm (μg/m\u00B3)</string>
+    <string name="partly_cloudy">Có mây</string>
+    <string name="moderate">Trung bình</string>
+    <string name="sunrise">Mặt trời mọc</string>
+    <string name="sunset">Mặt trời lặn</string>
+    <string name="aqi_value">Chỉ số chất lượng không khí: %1$d/5</string>
+    <string name="air_moderate_desc">Chất lượng không khí không tốt cho sức khỏe của những nhóm người nhạy cảm. Những ảnh hưởng sức khỏe tiềm ẩn có thể xảy ra.</string>
+    <string name="select_date_range">Chọn khoảng thời gian</string>
+    <string name="select_time">Chọn thời gian</string>
+    <string-array name="languages">
+        <item>Tiếng Anh</item>
+        <item>Tiếng Việt</item>
+        <item>Tiếng Trung (Giản thể)</item>
+    </string-array>
+    <string-array name="themes">
+        <item>Mặc định hệ thống</item>
+        <item>Sáng</item>
+        <item>Tối</item>
+    </string-array>
+</resources>

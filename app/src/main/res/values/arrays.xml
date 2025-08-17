@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sensors">
+        <item>@string/weather</item>
+        <item>@string/air_quality</item>
+    </array>
+
+    <array name="weather_attributes">
+        <item>@string/temperature_with_unit</item>
+        <item>@string/rainfall_with_unit</item>
+        <item>@string/windspeed_with_unit</item>
+        <item>@string/humidity_with_unit</item>
+    </array>
+
+    <array name="air_quality_attributes">
+        <item>@string/aqi</item>
+        <item>@string/aqi_predict</item>
+        <item>@string/co2</item>
+        <item>@string/co2_average</item>
+        <item>@string/no_aq</item>
+        <item>@string/no2</item>
+        <item>@string/o3</item>
+        <item>@string/pm10</item>
+        <item>@string/pm25</item>
+        <item>@string/so2</item>
+    </array>
+
+    <array name="timeframe">
+        <item>@string/hour</item>
+        <item>@string/day</item>
+        <item>@string/week</item>
+        <item>@string/month</item>
+        <item>@string/year</item>
+    </array>
+
+</resources>
