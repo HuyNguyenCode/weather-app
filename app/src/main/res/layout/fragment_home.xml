@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsingToolbar"
@@ -114,7 +114,8 @@
                 android:textColor="?android:attr/textColorTertiary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/todayCategory" />
+                app:layout_constraintTop_toBottomOf="@id/todayCategory"
+                tools:ignore="NotSibling" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout2"
@@ -381,6 +382,95 @@
                             app:lottie_autoPlay="true"
                             app:lottie_loop="true"
                             app:lottie_rawRes="@raw/raindrop_measure"
+                            app:lottie_speed="1.2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/windCard"
+                    style="?attr/materialCardViewFilledStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="@dimen/margin_base"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
+                    app:layout_constraintStart_toEndOf="@id/guideline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/humidity_card">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_large_alt"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/windGuideline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.6" />
+
+                        <TextView
+                            android:id="@+id/windTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wind"
+                            android:textAppearance="?attr/textAppearanceTitleMedium"
+                            app:layout_constraintEnd_toStartOf="@id/windGuideline"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/windValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/wind_value"
+                            android:textAppearance="?attr/textAppearanceHeadlineLarge"
+                            android:textColor="?android:attr/textColorPrimary"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/windTitle" />
+
+                        <TextView
+                            android:id="@+id/windUnit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_base"
+                            android:layout_marginBottom="@dimen/margin_base"
+                            android:text="km/h"
+                            android:textAppearance="?attr/textAppearanceTitleSmall"
+                            android:textColor="?android:attr/textColorPrimary"
+                            app:layout_constraintBottom_toBottomOf="@id/windValue"
+                            app:layout_constraintEnd_toStartOf="@id/windGuideline"
+                            app:layout_constraintStart_toEndOf="@id/windValue" />
+
+                        <TextView
+                            android:id="@+id/windStatus"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Moderate"
+                            android:textAppearance="?attr/textAppearanceBodyMedium"
+                            android:textColor="?android:attr/textColorTertiary"
+                            app:layout_constraintEnd_toStartOf="@id/windGuideline"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/windValue" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/windAnimationView"
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:scaleX="1.1"
+                            android:scaleY="1.1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/windsock"
                             app:lottie_speed="1.2" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -870,96 +960,99 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/windCard"
-                style="?attr/materialCardViewFilledStyle"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
-                tools:layout_editor_absoluteX="206dp"
-                tools:layout_editor_absoluteY="540dp">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/margin_large_alt"
-                    android:orientation="vertical">
 
-                    <androidx.constraintlayout.widget.Guideline
-                        android:id="@+id/windGuideline"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        app:layout_constraintGuide_percent="0.6" />
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/wind_Card"-->
+<!--                style="?attr/materialCardViewFilledStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"-->
+<!--                tools:layout_editor_absoluteX="206dp"-->
+<!--                tools:layout_editor_absoluteY="540dp"-->
+<!--                tools:ignore="MissingConstraints">-->
 
-                    <TextView
-                        android:id="@+id/windTitle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/wind"
-                        android:textAppearance="?attr/textAppearanceTitleMedium"
-                        app:layout_constraintEnd_toStartOf="@id/windGuideline"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="@dimen/margin_large_alt"-->
+<!--                    android:orientation="vertical">-->
 
-                    <TextView
-                        android:id="@+id/windValue"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/wind_value"
-                        android:textAppearance="?attr/textAppearanceHeadlineLarge"
-                        android:textColor="?android:attr/textColorPrimary"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/windTitle" />
+<!--                    <androidx.constraintlayout.widget.Guideline-->
+<!--                        android:id="@+id/windGuideline"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        app:layout_constraintGuide_percent="0.6" />-->
 
-                    <TextView
-                        android:id="@+id/windUnit"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/margin_base"
-                        android:layout_marginBottom="@dimen/margin_base"
-                        android:text="km/h"
-                        android:textAppearance="?attr/textAppearanceTitleSmall"
-                        android:textColor="?android:attr/textColorPrimary"
-                        app:layout_constraintBottom_toBottomOf="@id/windValue"
-                        app:layout_constraintEnd_toStartOf="@id/windGuideline"
-                        app:layout_constraintStart_toEndOf="@id/windValue" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/windTitle"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/wind"-->
+<!--                        android:textAppearance="?attr/textAppearanceTitleMedium"-->
+<!--                        app:layout_constraintEnd_toStartOf="@id/windGuideline"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
 
-                    <TextView
-                        android:id="@+id/windStatus"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="Moderate"
-                        android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="?android:attr/textColorTertiary"
-                        app:layout_constraintEnd_toStartOf="@id/windGuideline"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/windValue" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/windValue"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/wind_value"-->
+<!--                        android:textAppearance="?attr/textAppearanceHeadlineLarge"-->
+<!--                        android:textColor="?android:attr/textColorPrimary"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/windTitle" />-->
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/windAnimationView"
-                        android:layout_width="70dp"
-                        android:layout_height="100dp"
-                        android:scaleX="1.1"
-                        android:scaleY="1.1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:lottie_autoPlay="true"
-                        app:lottie_loop="true"
-                        app:lottie_rawRes="@raw/windsock"
-                        app:lottie_speed="1.2" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/windUnit"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/margin_base"-->
+<!--                        android:layout_marginBottom="@dimen/margin_base"-->
+<!--                        android:text="km/h"-->
+<!--                        android:textAppearance="?attr/textAppearanceTitleSmall"-->
+<!--                        android:textColor="?android:attr/textColorPrimary"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@id/windValue"-->
+<!--                        app:layout_constraintEnd_toStartOf="@id/windGuideline"-->
+<!--                        app:layout_constraintStart_toEndOf="@id/windValue" />-->
 
-                    <androidx.constraintlayout.widget.Guideline
-                        android:id="@+id/guideline2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        app:layout_constraintGuide_begin="20dp" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/windStatus"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Moderate"-->
+<!--                        android:textAppearance="?attr/textAppearanceBodyMedium"-->
+<!--                        android:textColor="?android:attr/textColorTertiary"-->
+<!--                        app:layout_constraintEnd_toStartOf="@id/windGuideline"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/windValue" />-->
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                    <com.airbnb.lottie.LottieAnimationView-->
+<!--                        android:id="@+id/windAnimationView"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:scaleX="1.1"-->
+<!--                        android:scaleY="1.1"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:lottie_autoPlay="true"-->
+<!--                        app:lottie_loop="true"-->
+<!--                        app:lottie_rawRes="@raw/windsock"-->
+<!--                        app:lottie_speed="1.2" />-->
 
-            </com.google.android.material.card.MaterialCardView>
+<!--                    <androidx.constraintlayout.widget.Guideline-->
+<!--                        android:id="@+id/guideline2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        app:layout_constraintGuide_begin="20dp" />-->
+
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

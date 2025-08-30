@@ -41,9 +41,9 @@
         </activity>
 
         <!-- Các activity phụ -->
-        <activity
-            android:name="com.ninegroup.weather.ui.WelcomeActivity"
-            android:exported="false"/>
+<!--        <activity-->
+<!--            android:name="com.ninegroup.weather.ui.WelcomeActivity"-->
+<!--            android:exported="false"/>-->
         <activity
             android:name="com.ninegroup.weather.ui.SettingsActivity"
             android:exported="false"/>

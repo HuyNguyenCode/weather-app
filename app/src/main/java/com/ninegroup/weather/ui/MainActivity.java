@@ -67,11 +67,11 @@ public class MainActivity extends AppCompatActivity implements ConnectionReceive
         if (isRemember.equals("0"))
             dataStoreHelper.putStringValue("access_token", null);
 
-        if (accessToken == null || accessToken.equals("null")) {
-            Log.i("Main Activity", "Started WelcomeActivity");
+//        if (accessToken == null || accessToken.equals("null")) {
+//            Log.i("Main Activity", "Started WelcomeActivity");
 //            HomeFragment.handler.removeCallbacks(HomeFragment.updateUI);
-            startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
-        }
+//            startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
+//        }
         else {
             Log.i("Main Activity", "Getting Asset information");
             AssetClient assetClient = new AssetClient();
